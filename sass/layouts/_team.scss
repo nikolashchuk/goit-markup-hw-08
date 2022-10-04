@@ -3,15 +3,17 @@
 }
 
 .team-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 0.85;
   text-align: center;
   letter-spacing: 0.03em;
 }
 .team-list {
   display: flex;
+  flex-direction: column;
+  gap: 30px;
   justify-content: space-between;
   list-style-type: none;
 }
@@ -42,7 +44,7 @@
   color: var(--secondary-text-color);
   font-family: 'Roboto';
   font-size: 16px;
-  line-height: 0.84;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 16px;
@@ -50,6 +52,7 @@
 
 .social-list {
   display: flex;
+  align-items: center;
   justify-content: center;
   gap: 10px;
   list-style-type: none;

@@ -9,6 +9,9 @@
 
 // layout styles
 @import './layouts/header';
+
+@import './layouts/menu';
+
 @import './layouts/hero';
 @import './layouts/feature';
 @import './layouts/about';
@@ -19,6 +22,5 @@
 @import './layouts/portfolio';
 
 @import './layouts/footer';
-@import './layouts/footer-form';
 
 @import './layouts/modal-window';
