@@ -10,12 +10,18 @@
   text-align: center;
   letter-spacing: 0.03em;
 }
+
 .team-list {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  justify-content: space-between;
   list-style-type: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .team-item {
@@ -24,6 +30,17 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .teammate {

@@ -12,7 +12,8 @@
 }
 
 .portfolio-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   transition: var(--anim-hover);
 
@@ -26,14 +27,34 @@
 .portfolio-list {
   margin: 0px;
   padding: 0px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  // display: flex;
+  // flex-wrap: wrap;
+  // gap: 30px;
   list-style-type: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .portfolio-item {
-  flex-basis: calc((100% - 30px * 2) / 3);
+  &:not(:last-child) {
+    @media screen and (max-width: 768px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .team-thumb {
@@ -75,6 +96,7 @@
   border: 1px solid #eeeeee;
   border-top: none;
   padding: 20px 24px;
+  flex-grow: 1;
 }
 
 .portfolio-title {

@@ -1,11 +1,26 @@
 .portfolio-btn-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   gap: 8px;
+  row-gap: 15px;
+
   margin-top: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   padding: 0px;
   list-style-type: none;
+
+  @media screen and (max-width: 767px) {
+    max-width: 400px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio-btn {
